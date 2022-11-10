@@ -1,0 +1,32 @@
+/* Add styling for your page here */
+
+.App {
+  background:linear-gradient(pink, lightskyblue);
+  display: flex;
+}
+
+.BakeryItem {
+  border: 5px inset #ddd;
+  border-radius: 20px;
+  padding: 0;
+  width: 150px;
+  align-self: center;
+}
+
+.bakery-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-left: auto;
+  padding: 16px;
+}
+.bakery-items .window-body > * {
+  margin: 0;
+}
+.window-body {
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  justify-content: space-between;
+  gap: 1em
+}
